@@ -1,20 +1,18 @@
-Pino
-A very low overhead Node.js logger.
+# Pino
+### A very low overhead Node.js logger.
 
-Installation:
+###### Installation:
+    npm install pino
 
-npm install pino
-yarn add pino
+    yarn add pino
 
-Usage:
+###### Usage:
+    const logger = require('pino')()
+    
+    logger.info('hello world')
+    
+    const child = logger.child({ a: 'property' })
+    child.info('hello child!')
 
-const logger = require('pino')()
-
-logger.info('hello world')
-
-const child = logger.child({ a: 'property' })
-child.info('hello child!')
-
-API:
-
+###### API:
 https://getpino.io/#/docs/api 
